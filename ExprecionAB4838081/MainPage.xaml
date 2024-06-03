@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExprecionAB4838081.MainPage">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+            Text="expresión (A+B)^2/2"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+            <Image
+              Source="abex.png"
+              HeightRequest="100"
+              Aspect="AspectFit"/>
+          <Entry x:Name="entry1" Placeholder="Introduce numero A"/>
+          <Entry x:Name="entry2" Placeholder="Introduce numero B"/>
+          <Entry x:Name="entryr" Placeholder="Resuotado"/>
+          <Button Text="Calcular" Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
